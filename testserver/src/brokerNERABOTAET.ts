@@ -53,4 +53,4 @@ httpServer.listen(WS_PORT, () => {
     console.log(`MQTT брокер через WebSocket запущен на порту ${WS_PORT}`);
 });
 
-//ярик иди нахуй
+//тимур молодец
