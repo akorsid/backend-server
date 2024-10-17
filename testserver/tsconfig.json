@@ -1,21 +1,26 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "target": "ES6",                            // Совместимость с ES6
+    "module": "commonjs",                       // Использование commonjs как модуля
+    "declaration": true,                        // Создание деклараций типов (.d.ts)
+    "removeComments": true,                     // Удаление комментариев в скомпилированном коде
+    "emitDecoratorMetadata": true,              // Генерация метаданных для декораторов
+    "experimentalDecorators": true,             // Включение экспериментальных декораторов
+    "allowSyntheticDefaultImports": true,       // Разрешение синтетических импорта по умолчанию
+    "sourceMap": true,                          // Создание карт источников
+    "outDir": "./dist",                         // Каталог вывода скомпилированного кода
+    "rootDir": "./src",                         // Корневая папка с исходным кодом
+    "baseUrl": "./",                            // Базовый путь
+    "incremental": true,                        // Инкрементальная компиляция
+    "skipLibCheck": true,                       // Пропуск проверки типов библиотек
+    "strictNullChecks": false,                  // Отключение строгой проверки на null
+    "noImplicitAny": false,                     // Отключение предупреждений для неявного типа any
+    "strictBindCallApply": false,               // Отключение строгих правил для методов bind, call и apply
+    "forceConsistentCasingInFileNames": false,  // Отключение принудительной проверки на регистр файлов
+    "noFallthroughCasesInSwitch": false,        // Отключение строгих проверок переходов в switch
+    "strict": true,                             // Включение строгого режима TypeScript
+    "esModuleInterop": true,                    // Поддержка ES-модулей
+    "typeRoots": ["./node_modules/@types", "./patches"],  // Пути к типам
+    "strictNullChecks": false                   // Дополнительная строка из нового блока
   }
 }
