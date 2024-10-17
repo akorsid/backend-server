@@ -1,14 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios'
 import { XMLParser } from 'fast-xml-parser'
-/** 
-* + получение курса валют на текущую дату(правильно вставить в запрос)(date)
-* + добавить возможность получения температуры в Москве
-* + и по курсу валют и по температура преобразовать методы запроса в интервальные(чтобы запрос происходил раз в какое-то время. сервер запустился один раз и на длительный период.
-    1) изменить ссылку
-    2) добавить интервалы(setinterval)
-    кеш сервис раз в день, везер раз в сутки
-*/
 
 @Injectable()
 export class CacheService {
@@ -19,7 +11,7 @@ export class CacheService {
         this.updateDateAndFetchData();
         setInterval(() => {
             this.updateDateAndFetchData();
-        }, 43200001);
+        }, 43200000);
     }
 
     private updateDateAndFetchData() {
