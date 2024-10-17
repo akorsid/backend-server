@@ -21,6 +21,5 @@
     "strict": true,                             // Включение строгого режима TypeScript
     "esModuleInterop": true,                    // Поддержка ES-модулей
     "typeRoots": ["./node_modules/@types", "./patches"],  // Пути к типам
-    "strictNullChecks": false                   // Дополнительная строка из нового блока
   }
 }

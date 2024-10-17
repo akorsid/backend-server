@@ -6,14 +6,14 @@ const client = mqtt.connect(brokerUrl, {
   password: 'your-jwt-token' // Генерируется с помощью сервера
 });
 
-const topic = 'kupriv';
+const topic = 'учеба';
 
 // Объект для передачи
 const message = {
-  type: 'object',
+  type: 'долги',
   content: {
-    text: 'Привет!',
-    numbers: [1, 2, 3, 4],
+    text: 'кол-во:',
+    numbers: [2],
   },
 };
 

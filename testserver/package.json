@@ -75,7 +75,6 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "type": "module",
   "main": ".eslintrc.js",
   "directories": {
     "test": "test"
