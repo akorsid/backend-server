@@ -6,7 +6,7 @@ const client = mqtt.connect(brokerUrl, {
     password: 'your-jwt-token' // Генерируется с помощью сервера
 });
 
-const topic = 'учеба';
+const topic = 'академ долги';
 
 client.on('connect', () => {
     console.log('Подключено к брокеру');

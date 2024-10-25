@@ -6,7 +6,7 @@ var client = mqtt_1.default.connect(brokerUrl, {
     username: 'client1',
     password: 'your-jwt-token' // Генерируется с помощью сервера
 });
-var topic = 'учеба';
+var topic = 'академ долги';
 client.on('connect', function () {
     console.log('Подключено к брокеру');
     client.subscribe(topic, { qos: 1 }, function (err) {
