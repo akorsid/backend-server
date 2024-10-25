@@ -6,13 +6,13 @@ var client = mqtt_1.default.connect(brokerUrl, {
     username: 'client1',
     password: 'your-jwt-token' // Генерируется с помощью сервера
 });
-var topic = 'академ долги';
+var topic = 'ключевая ставка ЦБ';
 // Объект для передачи
 var message = {
-    type: 'количество',
+    type: 'процент',
     content: {
-        text: 'наименование:',
-        numbers: [2],
+        text: 'выросла до',
+        numbers: [21],
     },
 };
 client.on('connect', function () {

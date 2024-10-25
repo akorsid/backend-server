@@ -2,18 +2,18 @@ import mqtt from 'mqtt';
 
 const brokerUrl = 'mqtt://localhost:1883';
 const client = mqtt.connect(brokerUrl, {
-    username: 'client1',
-    password: 'your-jwt-token' // Генерируется с помощью сервера
+  username: 'client1',
+  password: 'your-jwt-token' // Генерируется с помощью сервера
 });
 
-const topic = 'академ долги';
+const topic = 'ключевая ставка ЦБ';
 
 // Объект для передачи
 const message = {
-  type: 'количество',
+  type: 'процент',
   content: {
-    text: 'наименование:',
-    numbers: [2],
+    text: 'выросла до',
+    numbers: [21],
   },
 };
 
